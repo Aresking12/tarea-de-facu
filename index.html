@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios CSS</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página Principal - Mi Sitio Web</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="contenedor">
-        <h1>Ejercicios de HTML y CSS</h1>
-
-        <!-- Actividad 1 -->
-        <div class="caja">
-            <h2>Actividad 1: Botón que cambia al hacer clic</h2>
-            <p>Obs: utilizar active y transition</p>
-            <button class="mi-boton">Haz clic aquí</button>
+        <h1 class="titulo-animado">Bienvenido a Mi Sitio Web</h1>
+        
+        <div class="descripcion">
+            <h2 class="subtitulo-animado">Acerca de este sitio</h2>
+            <p>Esta página web contiene información sobre nuestros productos y empleados.</p>
         </div>
 
-        <!-- Actividad 2 -->
-        <div class="caja">
-            <h2>Actividad 2: Cuadro que se mueve y cambia de color</h2>
-            <p>Obs: Modificar @keyframes moverDerecha</p>
-            <div class="cuadro-animado"></div>
+        <div class="navegacion">
+            <h2 class="subtitulo-animado">Secciones del sitio:</h2>
+            
+            <div class="tarjeta">
+                <h3>Productos</h3>
+                <p>Encuentra nuestro catálogo completo de productos con precios actualizados.</p>
+                <a href="productos.html">
+                    <button class="boton-nav">Ver Productos</button>
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Empleados</h3>
+                <p>Conoce a nuestro equipo de trabajo con fotos e información de cada empleado.</p>
+                <a href="empleados.html">
+                    <button class="boton-nav">Ver Empleados</button>
+                </a>
+            </div>
         </div>
 
-        <!-- Actividad 3 -->
-        <div class="caja">
-            <h2>Actividad 3: Texto que gira</h2>
-            <p>Obs: Crear animación que gire y suba</p>
-            <p class="texto-girando">Texto Animado</p>
-        </div>
-
-        <!-- Actividad 4 -->
-        <div class="caja">
-            <h2>Actividad 4: Cuadro que crece con hover</h2>
-            <p>Obs: Usar transition con hover</p>
-            <div class="cuadro-hover">Pasa el mouse</div>
-        </div>
-
-        <!-- Actividad 5 -->
-        <div class="caja">
-            <h2>Actividad 5: Cambiar velocidad de animación</h2>
-            <p>Obs: Ajustar animation-duration</p>
-            <p class="texto-rapido">Texto Rápido</p>
-            <p class="texto-lento">Texto Lento</p>
-        </div>
-
+        <footer>
+            <p>© 2025 Angel Quintana</p>
+        </footer>
     </div>
 </body>
 </html>

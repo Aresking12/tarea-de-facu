@@ -1,0 +1,204 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Animación de títulos */
+.titulo-animado {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: aparecer 2s infinite;
+}
+
+@keyframes aparecer {
+    0%, 100% {
+        transform: scale(1);
+        color: #333;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #4CAF50;
+    }
+}
+
+.subtitulo-animado {
+    color: #555;
+    margin: 20px 0;
+    animation: deslizar 3s infinite;
+}
+
+@keyframes deslizar {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* Descripción */
+.descripcion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descripcion p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navegacion {
+    margin: 30px 0;
+}
+
+.tarjeta {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.tarjeta h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botones de navegación */
+.boton-nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin: 5px;
+}
+
+.boton-nav:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.boton-nav:active {
+    transform: scale(0.95);
+}
+
+.menu-navegacion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-productos thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tabla-productos tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-productos tbody tr:hover {
+    background-color: #e8f5e9;
+}
+
+/* Galería de empleados */
+.galeria-empleados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.empleado {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.foto-empleado {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    animation: rotar 5s infinite;
+    transition: all 0.3s;
+}
+
+.foto-empleado:hover {
+    transform: scale(1.2);
+    border-color: #FF9800;
+}
+
+@keyframes rotar {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.empleado h3 {
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.empleado p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    color: #666;
+}
